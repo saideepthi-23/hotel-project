@@ -30,7 +30,7 @@
     height: 80vh;
 }
 #bg-video video{
-  filter: brightness(10%);
+  filter: brightness(40%);
   object-fit: fill;
   height: 400px;
   width: 100%;
