@@ -1,0 +1,810 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Home {
+  color: white;
+  text-decoration: none;
+}
+.Portfolio {
+  color: white;
+  text-decoration: none;
+}
+.Blog-Item {
+  color: white;
+  text-decoration: none;
+}
+.Contact-Item {
+  color: white;
+  text-decoration: none;
+}
+#navbar {
+  background-color: black;
+  padding: 10px;
+  position:sticky;
+  
+}
+.bg-form-Image {
+    width: 100%;
+    height: 80vh;
+}
+#bg-video video{
+  filter: brightness(10%);
+  object-fit: fill;
+  height: 400px;
+  width: 100%;
+}
+.Subscribe-Section{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhDb3dOo2PrQj2jVT_iXtAcS1uDyE9yNlwA&s);
+  height:70vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:1.5rem;
+  color:white;
+}
+.Subscribe-btn{
+  height:2.5rem;
+  padding:0.5rem;
+  border-radius:10px;
+}
+button:hover{
+  border:2px solid black;
+  background-color: black;
+  color:white;
+}
+
+@media screen and (max-width: 581px) {
+  .Nav-Logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Nav-Items {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  ul > li {
+    padding: 0.5rem;
+  }
+  div > .Hotel-Logo {
+    height: 50px;
+    vertical-align: middle;
+  }
+  .Hotel-Name {
+    font-size: 1.1rem;
+    color: rgb(254, 184, 5);
+    text-decoration: none;
+  }
+  ul li:hover {
+    background-color: crimson;
+    padding: 0.3rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+  }
+  #bg-Img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Input-Forms {
+    background-color: antiquewhite;
+    width:60vh;
+    top:27%;
+    position:absolute;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .Input-Icons{
+    margin:3px;
+  }
+  div i{
+   position: relative;
+   top:0.1rem;   
+   left:1.7rem;
+  }
+  div input{
+    height: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .Check-btn{
+    height: 2rem;
+    width:11.7rem;
+    margin-top: 1rem;
+    Border-style: none;
+    background-color: crimson;
+  }
+  #Hotel-Locations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+  }
+  .Locations{
+    display:none;
+  }
+  .Mb-Locations{
+    background:linear-gradient(lightpink,white,lightblue);
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap:0.4rem;
+    padding:1.3rem;
+    margin:2rem;
+  }
+  .Mb-img-loc{
+    height:auto;
+    width:100%;
+  }
+  .Mb-loc-content{
+    padding-bottom:1.3rem;
+    display:flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+  }
+  .Info-btn{
+   height:2.5rem;
+   width: 7rem;
+   color:white;
+   background-color:crimson;
+   border-radius: 3rem;
+   border-style: none;
+  }
+  .Recommended-places{
+    display: none;
+  }
+  .Mb-Recommended-places{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+  }
+  .Mb-Places{
+    background-color: crimson;
+    color:white;
+    text-align: center;
+    padding:12px 100px;
+  }
+  .Mb-Countries-Images{
+    height: 3rem;
+  }
+  .Mb-country-Names{
+    background-color: lightblue;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 6.5rem;
+    padding:0.6rem;
+    margin:3px;
+  }
+  .Mb-country-Names:hover{
+    background-color:crimson;
+  }
+  #main{
+    background-image: url(./Assets/Images/bg-image.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    gap:1rem;
+  }
+  .Hotel-Rooms{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    gap:1.5rem;
+  }
+  .Room-img{
+    height:100px;
+    width:150px;
+  }
+  .Room-Types{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color:white;
+  }
+  .Hotel-Title > h1{
+    color:goldenrod;
+    font-size:1.5rem;
+  }
+  .Hotel-Title > p{
+    color:white;
+    font-size:1rem;
+    text-align: center;
+  }
+  div > h2{
+    text-align: center;
+    color: crimson;
+    padding-bottom:3px;
+  }
+  #Facility-Container{
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    justify-content:center ;
+    align-items: center;
+    margin:2.5rem;
+    text-align: center;
+    list-style: none;
+  }
+  div .Service-Image{
+    height: 120px;
+    margin-top: 1rem;
+  }
+  .Service-heading{
+    color: crimson;
+    padding-top:20px;
+  }
+  #Frame-Form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .bg-img-Map{
+    height:100vh;
+    width:100%;
+  }
+  .Map{
+    position: absolute;
+    top: 11%;
+  }
+  iframe{
+    width:300px;
+    height:300px
+  }
+  .Form-2{
+    background-color: light burlywood;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1.5rem;
+    padding: 2rem;
+  
+  }
+  .ip-fm{
+    height:2.5rem;
+    width:15rem;
+    border-style: none;
+    background-color:lightblue;
+   
+  }
+  .Message{
+    border-style: none;
+    background-color: lightblue;
+    height:6rem;
+    width:15rem;
+  }
+  .Msg-btn{
+    background-color:crimson;
+    color:black;
+    border-style: none;
+    height: 2.5rem;
+    width:15rem;
+    
+  }
+}
+@media screen and (min-width: 581px) and (max-width: 1000px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div > .Hotel-Logo {
+    height: 2rem;
+    vertical-align: middle;
+  }
+  .Hotel-Name {
+    vertical-align: middle;
+    font-size: 1rem;
+    color: rgb(254, 184, 5);
+    text-decoration: none;
+  }
+  ul > li {
+    list-style: none;
+    display: inline;
+    padding: 0.7rem;
+  }
+  ul li :hover {
+    background-color: crimson;
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+  }
+  #bg-Img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Input-Forms {
+    background-color: antiquewhite;
+    margin: 1.6rem;
+    padding: 1rem;
+    height:38vh;
+    position:absolute;
+    top:25%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  div i{
+   position: relative;
+   top:1px;   
+   left:1.9rem;
+  }
+  div input{
+    height: 1.5rem;
+    padding-left: 2rem;
+    margin:0.2rem;
+  }
+  div .Input-Icons .room{
+    padding-left: 1.8rem;
+  }
+  div #check{
+    margin-top:10%;
+  }
+  .Check-btn{
+    height: 2rem;
+    width:11.7rem;
+    margin-top: 0.6rem;
+    Border-style: none;
+    background-color: crimson;
+  }
+  #Hotel-Locations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin: 1.5rem;
+  }
+  .Locations{
+    background:linear-gradient(lightpink,white,lightblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding:1.3rem;
+  }
+  .Mb-Locations{
+    display:none;
+  }
+  .Img-Location{
+    height:40vh;
+    width:50vh;
+  }
+  .About-Loc{
+    padding-bottom:1.3rem;
+    display:flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+  }
+  .Info-btn{
+   height:2.5rem;
+   width: 7rem;
+   color:white;
+   background-color:crimson;
+   border-radius: 3rem;
+   border-style: none;
+  }
+  .Mb-Recommended-places{
+    display:none;
+  }
+  .Recommended-places{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .Places{
+    background-color: crimson;
+    color:white;
+    text-align: center;
+    padding:18px 220px;
+  }
+  .Countries-Images{
+    height:3rem;
+  }
+  .Rec-country-Names{
+    background-color: lightblue;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15rem;
+    padding:0.6rem;
+    margin:3px;
+  }
+  .Rec-country-Names:hover{
+    color:white;
+    background-color: crimson;
+  } 
+  #main{
+    background-image: url(./Assets/Images/bg-image.jpg);
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    padding: 1.5rem;
+  }
+  .Hotel-Rooms{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap:1rem;
+  }
+  .Room-img{
+    height:100px;
+    width:250px;
+  }
+  .Room-Types{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .Hotel-Title > h1{
+    color:goldenrod;
+    font-size:1.7rem;
+  }
+  .Hotel-Title > p{
+    color:white;
+    font-size:1.2rem;
+    text-align: center;
+  }
+  div > h2{
+    color: crimson;
+    padding-bottom:3px;
+  }
+  #Facility-Container{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin:2.5rem;
+    text-align: center;
+    list-style: none;
+  }
+  div .Service-Image{
+    height: 120px;
+  }
+  .Service-heading{
+    color: crimson;
+    padding-top:20px;
+  }
+  #Frame-Form{
+    position: relative;
+    padding: 2.5rem; 
+  }
+  .bg-img-Map{
+    height:100vh;
+    width:100%;
+    
+  }
+  iframe{
+    width:225px;
+    height:300px
+  }
+  .Map{
+    position: absolute;
+    top: 20%; 
+    left: 8%;
+  }
+  .Form-2{
+    background-color:white;
+    top:15%;
+    right:8%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1.5rem;
+    padding: 1rem;
+  }
+  .ip-fm{
+    height:2.5rem;
+    width:14rem;
+    border-style: none;
+    background-color:lightblue;
+   
+  }
+  .Message{
+    border-style: none;
+    background-color: lightblue;
+    height:6rem;
+    width:14rem;
+  }
+  .Msg-btn{
+    background-color:crimson;
+    color:black;
+    border-style: none;
+    height: 2.5rem;
+    width:14rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div > .Hotel-Logo {
+    height: 3.5rem;
+    vertical-align: middle;
+  }
+  .Hotel-Name {
+    vertical-align: middle;
+    font-size: 2rem;
+    color: rgb(254, 184, 5);
+    text-decoration: none;
+  }
+  ul > .List-Items {
+    list-style: none;
+    display: inline;
+    padding: 0.7rem;
+  }
+  ul li :hover {
+    background-color: crimson;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+  }
+  #bg-Img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Input-Forms {
+    background-color: antiquewhite;
+    margin: 1.5rem;
+    padding: 1rem;
+    height:35vh;
+    width:70%;
+    position:absolute;
+    top:25%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  div i{
+   position: relative;
+   top:1px;   
+   left:1.7rem;
+  }
+  div input{
+    height: 2rem;
+    padding-left: 2.2rem;
+  }
+  .Check-btn{
+    height: 2rem;
+    width:11rem;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    Border-style: none;
+    background-color: crimson;
+  }
+  #Hotel-Locations{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    margin:1rem;
+    text-align: justify;
+  }
+  .Locations{
+    background:linear-gradient(lightpink,white,lightblue);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap:1rem;
+  }
+  .Mb-Locations{
+    display:none;
+  }
+  .Img-Location{
+    height:40vh;
+    width:100%;
+  }
+  .About-Loc{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .Info-btn{
+   height:2.5rem;
+   width: 7rem;
+   color:white;
+   background-color:crimson;
+   border-radius: 3rem;
+   border-style: none;
+  }
+  .Mb-Recommended-places{
+    display:none;
+  }
+  .Recommended-places{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .Places{
+    background-color: crimson;
+    color:white;
+    text-align: center;
+    padding:10px 40px;
+  }
+  .Countries-Images{
+    height:3rem;
+  }
+  .Rec-country-Names{
+    background-color: lightblue;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 6.5rem;
+    padding:0.6rem;
+    margin:3px;
+  }
+  .Rec-country-Names:hover{
+    color:white;
+    background-color: crimson;
+  }
+  #main{
+    background-image: url(./Assets/Images/bg-image.jpg);
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    background-repeat:no-repeat;
+    padding: 1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+    padding:7rem;
+    margin-top: 2rem;
+  }
+  .Hotel-Rooms{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    align-items: center;
+    padding:1.5rem;
+    row-gap:1rem;
+    column-gap: 1rem;
+  }
+  .Room-img{
+    height:150px;
+    width:200px;
+  }
+  .Room-Types{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+  }
+  .Hotel-Title > h1{
+    color:goldenrod;
+    font-size: 2rem;
+  }
+  .Hotel-Title > p{
+    color:white;
+    font-size:1.2rem;
+    text-align: center;
+  }
+  div > h2{
+    color: crimson;
+    padding-bottom:3px;
+  }
+  #Facility-Container{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin:2.5rem;
+    text-align: center;
+    list-style: none;
+  }
+  div .Service-Image{
+    height: 120px;
+  }
+  .Service-heading{
+    color: crimson;
+    padding-top:20px;
+  }
+  #Frame-Form{
+    position: relative;
+    padding: 2.5rem; 
+  }
+  .bg-img-Map{
+    height:100vh;
+    width:100%;
+    
+  }
+  iframe{
+    width:450px;
+    height:370px;
+  }
+  .Map{
+    position: absolute;
+    top: 20%; 
+    left: 8%;
+  }
+  .Form-2{
+    background-color:white;
+    top:18%;
+    right:8%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1.3rem;
+    padding: 1.5rem;
+  
+  }
+  .ip-fm{
+    height:2.5rem;
+    width:20rem;
+    border-style: none;
+    background-color:lightblue;
+   
+  }
+  .Message{
+    border-style: none;
+    background-color: lightblue;
+    height:6rem;
+    width:20rem;
+  }
+  .Msg-btn{
+    background-color:crimson;
+    color:black;
+    border-style: none;
+    height: 2.5rem;
+    width:20rem;
+  }
+}
